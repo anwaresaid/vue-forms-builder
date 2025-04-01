@@ -1,29 +1,9 @@
 # vue-case-study-v1
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a case study using vue3 composition api, vuex for statemanagment and antdesign
 
-## Recommended IDE Setup
+## How To Run
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+after pulling the project and installing dependencies, run the script "npm run dev" and enter user name: "admin" and password: "password" to login as admin.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+![Alt text](public/demo1.jpeg)
