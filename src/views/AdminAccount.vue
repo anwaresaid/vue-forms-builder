@@ -61,7 +61,6 @@
       </a-col>
     </a-row>
 
-    <!-- Logout Confirmation Modal -->
     <a-modal
       v-model:visible="logoutModalVisible"
       title="Confirm Logout"
@@ -166,8 +165,6 @@ const updatePassword = () => {
   // Simulate API call
   setTimeout(() => {
     try {
-      // In a real app, you would call your API to update the password
-      // For this demo, we're just showing a success message
       message.success('Password updated successfully')
 
       // Reset form

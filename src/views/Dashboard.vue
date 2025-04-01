@@ -86,7 +86,6 @@ import { TeamOutlined, DeleteOutlined, FormOutlined } from '@ant-design/icons-vu
 const router = useRouter()
 const store = useStore()
 
-// Use computed properties to access store state
 const loading = computed(() => store.getters.isLoading)
 const stats = computed(() => store.getters.stats)
 const formExists = computed(() => store.getters.formExists)

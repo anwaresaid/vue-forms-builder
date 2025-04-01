@@ -62,7 +62,6 @@
                 </a-col>
               </a-row>
 
-              <!-- Options for select type -->
               <a-row v-if="field.type === 'select'">
                 <a-col :span="24">
                   <a-form-item label="Options (comma separated)">
@@ -101,16 +100,12 @@
               :label="field.label"
               :required="field.required"
             >
-              <!-- Text input -->
               <a-input v-if="field.type === 'text'" placeholder="Enter text" />
 
-              <!-- Email input -->
               <a-input v-else-if="field.type === 'email'" type="email" placeholder="Enter email" />
 
-              <!-- Number input -->
               <a-input-number v-else-if="field.type === 'number'" style="width: 100%" />
 
-              <!-- Select input -->
               <a-select
                 v-else-if="field.type === 'select'"
                 placeholder="Select an option"
@@ -125,17 +120,14 @@
                 </a-select-option>
               </a-select>
 
-              <!-- Date input -->
               <a-date-picker v-else-if="field.type === 'date'" style="width: 100%" />
 
-              <!-- Textarea input -->
               <a-textarea
                 v-else-if="field.type === 'textarea'"
                 :rows="4"
                 placeholder="Enter text"
               />
 
-              <!-- Default to text input -->
               <a-input v-else placeholder="Enter text" />
             </a-form-item>
 
@@ -218,7 +210,6 @@ const saveForm = () => {
     return
   }
 
-  // Simulate API call
   setTimeout(() => {
     try {
       const formData = {

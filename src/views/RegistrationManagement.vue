@@ -156,10 +156,8 @@ const handleTableChange = (pag, filters, sorter) => {
   pagination.current = pag.current
   pagination.pageSize = pag.pageSize
 
-  // Handle sorting if needed
   if (sorter.field && sorter.order) {
     console.log('Sort by:', sorter.field, sorter.order)
-    // In a real app, you would pass these to your API
   }
 
   fetchUsers()
@@ -169,8 +167,6 @@ const handleSearch = () => {
   pagination.current = 1 // Reset to first page
   fetchUsers()
 
-  // In a real app, you would pass the search text to your API
-  // For this demo, we're just logging it
   console.log('Search for:', searchText.value)
 }
 
@@ -189,14 +185,10 @@ const handleDelete = () => {
 
   deleting.value = true
 
-  // Simulate API call
   setTimeout(() => {
     try {
-      // In a real app, you would call your API to delete the user
-      // For this demo, we're just removing it from the local array
       users.value = users.value.filter((user) => user.id !== selectedUser.value.id)
 
-      // Update deleted count in localStorage
       const deletedCount = parseInt(localStorage.getItem('deleted_count') || '0')
       localStorage.setItem('deleted_count', (deletedCount + 1).toString())
 
